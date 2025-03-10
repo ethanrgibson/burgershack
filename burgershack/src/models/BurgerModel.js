@@ -4,7 +4,7 @@ export const BurgerSchema = new Schema({
 
   name: { type: String },
   price: { type: Number },
-  withCheese: { type: Boolean }
+
 
 
 })
