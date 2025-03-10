@@ -8,6 +8,10 @@ class BurgerService {
     return burgers
   }
 
+  async createBurger(burgerData) {
+    const burger = await dbContext.Burgers.create(burgerData)
+    return burger
+  }
 }
 
 
