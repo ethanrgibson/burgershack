@@ -7,7 +7,7 @@ export class BurgersController extends BaseController {
     super('api/burgers')
 
     this.router
-      .get('/test', this.getTest)
+      .get('', this.getTest)
 
   }
 
