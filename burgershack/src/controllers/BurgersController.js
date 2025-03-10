@@ -51,7 +51,11 @@ export class BurgersController extends BaseController {
 
   async updateBurger(request, response, next) {
     try {
+      const burgerId = request.params.burgerId
+      const updatedContent = request.body
+      const newBurger = await burgerService.updatedBurger(burgerId, updatedContent)
 
+      response.send(newBurger)
     } catch (error) {
       next(error)
     }
