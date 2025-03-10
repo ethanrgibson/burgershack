@@ -1,10 +1,9 @@
-import mongoose from 'mongoose'
-import { AccountSchema } from '../models/Account.js'
-import { ValueSchema } from '../models/Value.js'
+import mongoose, { mongo } from 'mongoose'
+import { BurgerSchema } from '../models/BurgerModel.js'
+
 
 class DbContext {
-  Values = mongoose.model('Value', ValueSchema);
-  Account = mongoose.model('Account', AccountSchema);
+  Burgers = mongoose.model('Buger', BurgerSchema)
 }
 
 export const dbContext = new DbContext()
